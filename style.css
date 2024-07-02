@@ -139,7 +139,7 @@ p {
     justify-content: space-between;
 }
 
-.btn-container button {
+.btn-container a button {
     border: 1px solid var(--main);
     font-size: 1.5rem;
     padding: .8rem 1.5rem;
@@ -147,24 +147,28 @@ p {
     cursor: pointer;
 }
 
-button:nth-child(1) {
+.btn-container a{
+    text-decoration: none;
+}
+
+.btn-container .one {
     background-color: var(--main);
     transition: all .2s;
     float: left;
 }
 
-button:nth-child(2) {
+.btn-container .two {
     background: transparent;
     color: var(--main);
     float: right;
 }
 
-button:nth-child(1):hover {
+.btn-container .one:hover {
     background: transparent;
     color: var(--main);
 }
 
-button:nth-child(2):hover {
+.btn-container .two:hover {
     background-color: var(--main);
     color: black;
 }
@@ -402,6 +406,7 @@ footer {
 
 .footer ul li a{
     font-size: 1.4rem;
+    text-decoration: none;
 }
 
 footer .footer-rights {
